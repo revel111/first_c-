@@ -2,12 +2,12 @@
 {
     public static double Func(int[] array)
     {
-        int sum = 0;
+        int sumxxxx = 0;
 
         for (int i = 0; i < array.Length; i++)
-            sum += array[i];
+            sumxxxx += array[i];
 
-        return (double)sum / array.Length;
+        return (double)sumxxxx / array.Length;
     }
 
     public static int FuncMax(int[] array)
