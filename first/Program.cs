@@ -1,6 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿public class Class
+{
+    public static double Func(int[] array)
+    {
+        int sum = 0;
 
-Console.WriteLine("Hello, World!");
-int a = 5;
-int b = 100;
-int c = 1000;
+        for (int i = 0; i < array.Length; i++)
+            sum += array[i];
+
+        return (double)sum / array.Length;
+    }
+
+    public static void Main(string[] args)
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        Console.WriteLine("Average: " + Func(numbers));
+    }
+}
